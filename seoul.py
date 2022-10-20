@@ -42,7 +42,7 @@ def main():
     seoul_shop(result) 
 
     seoul_tbl = pd.DataFrame(result, columns=('name', 'address', 'time', 'phone', 'menu'))
-    seoul_tbl.to_csv('./seoul.csv', encoding='cp949', mode='w', index=True) # csv 파일로 변환
+    seoul_tbl.to_csv('./seoul.csv', encoding='utf-8', mode='w', index=True) # csv 파일로 변환
 
 if __name__ == '__main__':
     main()

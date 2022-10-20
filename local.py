@@ -47,7 +47,7 @@ def main():
 
     seoul_tbl = pd.DataFrame(result, columns=(
         'name', 'address', 'time', 'phone', 'menu'))
-    seoul_tbl.to_csv('./local.csv', encoding='cp949',
+    seoul_tbl.to_csv('./local.csv', encoding='utf-8',
                      mode='w', index=True)  # csv 파일로 변환
 
 
